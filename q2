@@ -1,14 +1,55 @@
 2222222222222
 
 A.  Explain what recursion is and when it is useful.
+        Answer) Recursion is when a method calls itself and it is useful when we need to make binary tree 
+                or when we need to call the method it self
     Explain what the |termination step| and |recursion step| are in a recursive method.
+        Answer) Termination step is when the method stops calling itself when recursion meet certain conditions.
+                Recursion step is a step that calls itself to get the certain condition that I want to see.
 
 B.  Describe the difference between a Queue and a Stack.
+        Answer) Queue and stack are linear structure of links but Queue is FIFO(first in first out) 
+        which the new linke goes to the first and the old one is removed and the new thing becomes as a head,
+        and stack is LIFO(last in first out) which the new link which goes in goes to the last 
+        and the first one which was head is moved to the last one.
 
 C.  Write a class for an element of a doublely-linked list.
+        Answer)public class DLnkList{
+  
+                  private DLnk head = new DLnk();
+                  public int length = 0;
+                  
+                  public DLnkList(){}
+                  
+                  public void addDLnk(DLnk newlink){
+                    newlink.setNext(this.head);
+                    this.head.setPrev(newlink);
+                    this.head=newlink;
+                    length=length + 1;}
+                
+                  public DLnk getiLnk(int i){
+                    DLnk it = this.head;
+                    while(i>0){
+                      it=it.getNext();
+                      i=i-1;}
+                    return it;}
+                  
+                  public void removeHead(){
+                    this.head=this.head.getNext();
+                    this.head.setPrev(null);
+                    length = length -1;}
+                  
+                  public DLnk getHead(){
+                    return this.head;}
+                   
+                }
 
 D.  Explain what a Merkle Tree is.  
+        Answer) Merkle tree is one of binary tree in which every non-leaf node is labelled 
+        with the hash of the labels or values (in case of leaves) of its child nodes.
     Describe the structure and purpose of a Merkle Tree.
+        Answer) Merkle trees are useful because they allow efficient and
+        secure verification of the contents of large data structures.
     What is the Merkle root?
     What is the function of a certificate in this data structure?
     
