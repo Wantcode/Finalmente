@@ -1,18 +1,37 @@
 333333333
 
 A.  Explain how digital signature works with public/private keypairs.
-
+    Anwer)Digital signiture is the data encrytion key which have public keypairs and private keypairs. 
+          Public keypairs are a encryted code that is released to pulic. Private keypairs are encryted code as well,
+          but it is not released to public. It only belongs to owners. Therefore, public keypairs are for generals to verify their files.
+          Private keypairs also work same, but it can be used for more privately. This can be used and differentiated efficiently by bureaucracy.
+    
 B.  Identify your favorite Java project this semester.  
     Describe two things you learned by doing the project.
     Describe two ways in which the project could be improved or expanded.
     
+    My favorite Java project this semester was Stack and Queue. 
+    Through this project, I made sure that how to use static and non-static methods, and LIFO and FIFO. 
+    Also, I learned how to bring an other object to what I'm writing. 
+    I can improve this project to make music player with GUI. I can make different way to sort the files with stack and queue.  
+    
 C.  Describe two advantages of object-oriented programming.
     Describe two disadvantages of object-oriented programming.
+    
+    Advantages) Objects of OOP are easily modified and taken to others. 
+                It also helps to subdivide the work. 
+    Disadvantages) It takes longer time and more work.
+                   Because of the larger size, it is slower than other programs.
     
 D.  Consider the following PYTHON code for the MNode class given below.
     What is the difference in the way Python and Java handle the declaration of datatypes?
     Explain the difference in how constructors are written in Python vs Java.
     Which language do you prefer?  Explain why.
+    
+    Answer) Python doesn't need to declare the datatypes while java must.
+            For making constructer in Python, it just need to write __init__ instead of typing same name of the class(object).
+            Also, it need to type "self" in Python to call "this" in java. 
+            I prefer to use java. Although java needs more work (like more letters) so seems dirty, java has more extensive than Python such as specifying the work. 
 -------------------------------------------------------------------------------------
     import hashlib
 
