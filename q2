@@ -46,10 +46,14 @@ C.  Write a class for an element of a doublely-linked list.
 
 D.  Explain what a Merkle Tree is.  
         Answer) Merkle tree is one of binary tree in which every non-leaf node is labelled 
-        with the hash of the labels or values (in case of leaves) of its child nodes.
+                with the hash of the labels or values (in case of leaves) of its child nodes.
     Describe the structure and purpose of a Merkle Tree.
         Answer) Merkle trees are useful because they allow efficient and
-        secure verification of the contents of large data structures.
+                secure verification of the contents of large data structures.
+                The base of the tree is unhashed data which are leaves, and it grows further and further.
+                The leaves have pairs and those pairs which are children compose the tree.
     What is the Merkle root?
+        Answer) Merkle root is an element that exists on top of the tree.
     What is the function of a certificate in this data structure?
-    
+        Answer) The function of a certificate is with binary system. 
+                The number of leaves is 2 to the power of n
